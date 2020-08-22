@@ -1,12 +1,13 @@
 * {
     box-sizing: border-box;
+    margin: 5px;
 }
 
 nav {
     background-color: whitesmoke;
     margin: auto;
     text-align: center;
-    width: 50%;
+    width: 60%;
 }
 
 nav li {
@@ -29,6 +30,12 @@ aside {
     width: 30%;
     padding: 10px;
     background-color: rgb(49, 49, 247);
+    height: auto;
+}
+
+img {
+    display: block;
+    margin: auto;
 }
 
 article {
@@ -41,4 +48,12 @@ article {
 footer li {
     display: inline-block;
     list-style-type: none;
+}
+h1 {
+text-align: center;
+font-size: 150%;
+}
+
+h2 {
+text-align: center;
 }
