@@ -1,16 +1,25 @@
 * {
     box-sizing: border-box;
-  }
+}
+
+nav {
+    background-color: whitesmoke;
+    margin: auto;
+    text-align: center;
+}
 
 nav li {
     display: inline;
+    type: none;
 }
-  
+
 body {
     background-image: url(./img/back.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    width: 50%;
+    margin: auto;
 }
 
 aside {
@@ -27,7 +36,7 @@ article {
     background-color: whitesmoke;
 }
 
-
 footer li {
     display: inline;
+    type: none;
 }
