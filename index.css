@@ -6,11 +6,13 @@ nav {
     background-color: whitesmoke;
     margin: auto;
     text-align: center;
+    width: 50%;
 }
 
 nav li {
-    display: inline;
-    type: none;
+    display: inline-block;
+    margin:5px;
+    list-style-type: none;
 }
 
 body {
@@ -18,7 +20,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 
@@ -31,12 +33,12 @@ aside {
 
 article {
     float: left;
-    width: 70%;
+    width: 60%;
     padding: 10px;
     background-color: whitesmoke;
 }
 
 footer li {
-    display: inline;
-    type: none;
+    display: inline-block;
+    list-style-type: none;
 }
