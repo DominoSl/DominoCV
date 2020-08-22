@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+
+nav li {
+    display: inline;
+}
+  
+body {
+    background-image: url(./img/back.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(49, 49, 247);
+}
+
+article {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+
+footer li {
+    display: inline;
+}
