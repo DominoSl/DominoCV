@@ -55,6 +55,9 @@ aside {
 
 img {
   display: block;
+  border-width: 2px;
+  border-color: whitesmoke;
+  border-style: solid;
   margin: auto;
 }
 
@@ -67,10 +70,9 @@ article {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
   width: 50%;
   text-align: center;
+  margin: auto;
 }
 
 footer li {
