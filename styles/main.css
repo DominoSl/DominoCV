@@ -19,6 +19,21 @@ nav li {
   border-radius: 20px;
 }
 
+#av {
+  flex-direction: column;
+  border-radius: 2%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cert:hover {
+  transform: scale(5);
+}
+
+.cert {
+  float: left;
+  margin-right: 50px;
+}
+
 body {
   background-image: url(../img/back.jpg);
   background-size: cover;
