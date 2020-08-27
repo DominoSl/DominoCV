@@ -24,9 +24,12 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  width: 60%;
+  width: 70%;
   margin: auto;
-  display: table;
+}
+
+section {
+  display: flex;
 }
 
 h1 {
@@ -44,9 +47,6 @@ h2 {
 }
 
 aside {
-  display: table-cell;
-
-  width: 25%;
   padding: 10px;
   background-color: rgba(2, 0, 143, 0.822);
   height: auto;
@@ -64,7 +64,6 @@ img {
 
 article {
   display: table-cell;
-  width: 60%;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
