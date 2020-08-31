@@ -41,6 +41,8 @@ body {
   background-repeat: no-repeat;
   width: 70%;
   margin: auto;
+  display: inline-block;
+  justify-items: right;
 }
 
 section {
