@@ -11,13 +11,10 @@ nav {
   text-align: center;
 }
 
-<<<<<<< Updated upstream
-=======
 img {
   border-radius: 10px;
 }
 
->>>>>>> Stashed changes
 nav li {
   display: inline-block;
   background-color: rgba(255, 255, 255, 0.8);
@@ -26,35 +23,25 @@ nav li {
   border-radius: 20px;
 }
 
-#av {
-  flex-direction: column;
-  border-radius: 2%;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.cert:hover {
-  transform: scale(5);
-}
-
-.cert {
-  float: left;
-  margin-right: 50px;
-}
-
 body {
   background-image: url(../img/back.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  width: 70%;
+  width: 60%;
   margin: auto;
-  display: inline-block;
-  justify-items: right;
+  display: table;
 }
 
-section {
+.container {
   display: flex;
-  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.container div {
+display: flex;
+flex-flow: row wrap;
+
 }
 
 h1 {
@@ -62,43 +49,39 @@ h1 {
   font-size: 200%;
 }
 
-img {
-  border-radius: 20px;
-}
-
 h2 {
   text-align: center;
 }
 
 aside {
+  display: table-cell;
+
+  width: 25%;
   padding: 10px;
   background-color: rgba(2, 0, 143, 0.822);
   height: auto;
-  width: 30%;
   border-radius: 10px;
   color: whitesmoke;
 }
 
 img {
   display: block;
-  border-width: 2px;
-  border-color: whitesmoke;
-  border-style: solid;
   margin: auto;
 }
 
 article {
   display: table-cell;
+  width: 60%;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-  width: 60%;
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   width: 50%;
   text-align: center;
-  margin: auto;
 }
 
 footer li {
