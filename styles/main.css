@@ -1,91 +1,47 @@
 * {
   box-sizing: border-box;
-  margin: 5px;
   font-family: "Times New Roman", Times, serif;
 }
 
-nav {
-  font-size: 18px;
-  margin: auto;
-  padding: 5px;
-  text-align: center;
-}
-
-<<<<<<< Updated upstream
-=======
-img {
-  border-radius: 10px;
-}
-
->>>>>>> Stashed changes
-nav li {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.8);
-  list-style-type: none;
-  padding: 10px;
-  border-radius: 20px;
-}
-
-#av {
-  flex-direction: column;
-  border-radius: 2%;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.cert:hover {
-  transform: scale(5);
-}
-
-.cert {
-  float: left;
-  margin-right: 50px;
-}
 
 body {
   background-image: url(../img/back.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  width: 70%;
-  margin: auto;
-  display: inline-block;
-  justify-items: right;
 }
+
+nav {
+  display: flex;
+}
+
+nav > li {
+  width: 50px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  
+} 
 
 section {
-  display: flex;
-  flex-wrap: wrap;
+ display: grid;
+ width: 80%;
+ grid-column-gap: 50px;
+ margin: auto;
 }
 
-h1 {
-  text-align: center;
-  font-size: 200%;
-}
 
-img {
-  border-radius: 20px;
-}
-
-h2 {
-  text-align: center;
-}
 
 aside {
+  display: table-cell;
   padding: 10px;
   background-color: rgba(2, 0, 143, 0.822);
-  height: auto;
   width: 30%;
+  float: left;
   border-radius: 10px;
   color: whitesmoke;
 }
 
-img {
-  display: block;
-  border-width: 2px;
-  border-color: whitesmoke;
-  border-style: solid;
-  margin: auto;
-}
 
 article {
   display: table-cell;
@@ -93,18 +49,17 @@ article {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   width: 60%;
+  float: left;
 }
+
+
 
 footer {
-  width: 50%;
-  text-align: center;
-  margin: auto;
-}
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  }
 
 footer li {
-  display: inline-block;
   list-style-type: none;
-  background-color: whitesmoke;
-  height: 20px;
-  border-radius: 3px;
-}
+} 
