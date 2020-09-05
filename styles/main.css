@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
+  margin: 10px;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 
 nav {
   display: flex;
-  width:50%;
+  width: 50%;
   flex-flow: row wrap;
   margin: auto;
 }
@@ -28,12 +29,18 @@ nav a {
   font-size: 20px;
 }
 
+#photo {
+  border-radius: 30%;
+  width: 200px;
+}
+
 nav a:hover {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
 section {
+  display: flexbox;
   width: 80%;
   margin: 5px auto;
   content: "";
@@ -42,32 +49,34 @@ section {
 }
 
 section #main {
-  display: table;
   clear: both;
 }
 
 aside {
-  display: table-cell;
-  background-color: rgba(94, 67, 250, 0.8);
+  background-color: rgba(38, 0, 255, 0.8);
   border-radius: 20px;
   padding: 0 20px;
   color: whitesmoke;
   float: left;
-  width: 20%;
+  width: 25%;
   margin: 0 20px 0 0;
   text-align: center;
+  height: 100%;
 }
 
 article {
-  display: table-cell;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   padding: 20px;
   float: left;
-  width: 70%;
+  width: 65%;
+  height: 100%;
 }
 
 footer {
+  width: 30%;
+  background-color: rgba(245, 245, 245, 0.582);
+  border-radius: 20%;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
