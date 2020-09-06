@@ -42,7 +42,7 @@ nav a:hover {
 section {
   display: flexbox;
   width: 80%;
-  margin: 5px auto;
+  margin: 20px auto;
   content: "";
   display: table;
   clear: both;
@@ -67,10 +67,11 @@ aside {
 article {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
-  padding: 20px;
+  padding: 20px 0;
   float: left;
   width: 65%;
   height: 100%;
+  margin: 0;
 }
 
 footer {
@@ -88,4 +89,9 @@ footer a {
   text-align: center;
   padding: 15px;
   font-size: 20px;
+}
+
+.cert {
+  float: left;
+  width: 30%;
 }
