@@ -39,39 +39,26 @@ nav a:hover {
   color: white;
 }
 
-section {
-  display: flexbox;
+main {
+  display: flex;
+  flex-flow: row wrap;
   width: 80%;
   margin: 20px auto;
-  content: "";
-  display: table;
-  clear: both;
 }
 
-section #main {
-  clear: both;
-}
 
 aside {
   background-color: rgba(38, 0, 255, 0.8);
   border-radius: 20px;
-  padding: 0 20px;
   color: whitesmoke;
-  float: left;
-  width: 25%;
-  margin: 0 20px 0 0;
+  flex: 20%;
   text-align: center;
-  height: 100%;
-}
+  }
 
 article {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
-  padding: 20px 0;
-  float: left;
-  width: 65%;
-  height: 100%;
-  margin: 0;
+  flex:70%;
 }
 
 footer {
