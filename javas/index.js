@@ -11,6 +11,7 @@ $("#intob").click(() => {
     .catch((err) => console.error(err));
 });
 
+
 $("#out").click(() => {
     let real = "https://www.metaweather.com/api/location/" + $('#ident').val();
   fetch(`${kost}/${real}`)
