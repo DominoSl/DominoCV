@@ -17,10 +17,10 @@ $("#out").click(() => {
     .then((response) => response.json())
     .then((json) => {
       $("#iconfirst").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
-      $("#iconsecond").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
-      $("#iconthird").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
-      $("#iconfourth").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
-      $("#iconfifth").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
+      $("#iconsecond").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[1].weather_state_abbr}.png`);  
+      $("#iconthird").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[2].weather_state_abbr}.png`);  
+      $("#iconfourth").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[3].weather_state_abbr}.png`);  
+      $("#iconfifth").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[4].weather_state_abbr}.png`);  
       $("#first").html(Math.round(json.consolidated_weather[0].the_temp) + " C");
       $("#second").html(Math.round(json.consolidated_weather[1].the_temp) + " C");
       $("#third").html(Math.round(json.consolidated_weather[2].the_temp) + " C");
