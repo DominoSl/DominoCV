@@ -46,7 +46,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #4caf50;
+  background-color: #ff4800;
   color: white;
 }
 
@@ -95,7 +95,6 @@ footer a {
 }
 
 #weather {
-  position: fixed;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
@@ -116,6 +115,7 @@ border-radius: 5px;
 text-align: center;
 }
 
+
 #weather:hover {
   left: 0;
   margin-left: 0;
@@ -123,6 +123,7 @@ text-align: center;
 
 #weather input {
   width: 100%;
+  text-align: center;
   margin: 5px;
   border-radius: 5px;
 }
