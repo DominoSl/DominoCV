@@ -13,13 +13,24 @@ body {
 
 nav {
   display: flex;
-  width: 50%;
   flex-flow: row wrap;
-  margin: auto;
+  position: fixed;
+  top: -110px;
+  left: 30%;
+  transition: 0.5s;
+  margin:  auto;
+  padding: 30px 10px;
+  border-radius: 20px;
+  background-color: rgba(245, 245, 245, 0.582);
+}
+
+nav:hover {
+top:0px;
+background-color: rgb(132, 165, 255);
 }
 
 nav a {
-  margin: auto;
+  margin: 5px;
   color: #000000;
   background-color: rgba(255, 254, 254, 0.8);
   border-radius: 20px;
@@ -84,6 +95,7 @@ footer a {
 }
 
 #weather {
+  position: fixed;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
@@ -92,7 +104,7 @@ footer a {
   background-color: rgb(255, 153, 0);
   left: -200px;
   top: 30%;
-  transition: 0.1s;
+  transition: 0.5s;
   padding: 30px 10px;
   width: 200px;
   font-size: 20px;
