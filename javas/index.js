@@ -16,15 +16,15 @@ $("#out").click(() => {
   fetch(`${kost}/${real}`)
     .then((response) => response.json())
     .then((json) => {
-      $("#iconfirst").src(`https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
+      $("#iconfirst").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
       $("#first").html(Math.round(json.consolidated_weather[0].the_temp) + " C");
-      $("#iconsecond").src(`https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
+      $("#iconsecond").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
       $("#second").html(Math.round(json.consolidated_weather[1].the_temp) + " C");
-      $("#iconthird").src(`https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
+      $("#iconthird").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
       $("#third").html(Math.round(json.consolidated_weather[2].the_temp) + " C");
-      $("#iconfourth").src(`https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
+      $("#iconfourth").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
       $("#fourth").html(Math.round(json.consolidated_weather[3].the_temp) + " C");
-      $("#iconfifth").src(`https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
+      $("#iconfifth").attr('src', `https://www.metaweather.com/static/img/weather/png/64/${json.consolidated_weather[0].weather_state_abbr}.png`);  
       $("#fifth").html(Math.round(json.consolidated_weather[4].the_temp) + " C");
     })
     .catch((err) => console.error(err));
