@@ -11,21 +11,25 @@ body {
   background-repeat: no-repeat;
 }
 
-nav {
+#cont{
   display: flex;
   flex-flow: row wrap;
-  position: fixed;
-  top: -110px;
-  left: 30%;
-  transition: 0.5s;
   margin:  auto;
+  justify-content: center;
+  justify-items: center;
+}
+
+nav {
+  position: fixed;
+  top: -70px;
+  transition: 0.5s;
   padding: 30px 10px;
   border-radius: 20px;
   background-color: rgba(245, 245, 245, 0.582);
 }
 
 nav:hover {
-top:0px;
+top:-10px;
 background-color: rgb(132, 165, 255);
 }
 
