@@ -1,47 +1,40 @@
-* {
-  box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
-  margin: 10px;
-}
-
 body {
+  font-family: Montserrat;
   background-image: url(../img/back.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 }
 
-#cont{
-  display: flex;
-  flex-flow: row wrap;
-  margin:  auto;
-  justify-content: center;
-  justify-items: center;
-}
-
-nav {
+.headerBlock {
   position: fixed;
-  top: -70px;
-  transition: 0.5s;
-  padding: 30px 10px;
-  border-radius: 20px;
-  background-color: rgba(245, 245, 245, 0.582);
+  top: -55px;
+  transition: 0.3s;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(210, 212, 218, 0.5);
+  text-align: center;
 }
 
-nav:hover {
-top:-10px;
-background-color: rgb(132, 165, 255);
+.headerBlock:hover {
+top: 0px;
+background-color: rgba(210, 212, 218, 1);
+padding: 50px 20px;
 }
 
-nav a {
-  margin: 5px;
+
+.navMenu__link {
+  display: inline-block;
+  vertical-align: middle;
   color: #000000;
-  background-color: rgba(255, 254, 254, 0.8);
   border-radius: 20px;
   text-align: center;
-  padding: 15px;
-  text-decoration: none;
+  padding: 10px 20px;
   font-size: 20px;
+  font-weight: 700;
+  
 }
 
 #photo {
@@ -49,29 +42,33 @@ nav a {
   width: 200px;
 }
 
+h2 {
+  border-bottom: solid white 2px;
+}
+
 nav a:hover {
   background-color: #ff4800;
   color: white;
 }
 
-main {
+.mainBlock {
   display: flex;
   flex-flow: row wrap;
   width: 80%;
-  margin: 20px auto;
+  margin: 40px auto;
+  border-radius: 20%;
 }
 
 aside {
-  background-color: rgba(38, 0, 255, 0.8);
-  border-radius: 20px;
+  background-color: rgba(26, 3, 155, 0.8);
   color: whitesmoke;
   flex: 20%;
   text-align: center;
+  padding: 20px;
 }
 
 article {
   background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 20px;
   flex: 70%;
   padding: 20px;
 }
@@ -91,54 +88,4 @@ footer a {
   text-align: center;
   padding: 15px;
   font-size: 20px;
-}
-
-.cert {
-  float: left;
-  width: 30%;
-}
-
-#weather {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  background-color: rgb(255, 153, 0);
-  left: -200px;
-  top: 30%;
-  transition: 0.5s;
-  padding: 30px 10px;
-  width: 200px;
-  font-size: 20px;
-  border-radius: 20px;
-}
-
-#weather div {
-border-radius: 5px;
-text-align: center;
-}
-
-
-#weather:hover {
-  left: 0;
-  margin-left: 0;
-}
-
-#weather input {
-  width: 100%;
-  text-align: center;
-  margin: 5px;
-  border-radius: 5px;
-}
-
-#weather button {
-  width: 80%;
-  margin: 5px;
-  border-radius: 5px;
-}
-
-#weather button:hover {
-  color: white;
-  background-color: rgb(241, 19, 19);
 }
