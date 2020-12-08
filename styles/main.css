@@ -16,6 +16,7 @@ body {
   padding: 20px;
   background-color: rgba(210, 212, 218, 0.5);
   text-align: center;
+  opacity: 0;
 }
 
 .headerBlock:hover {
